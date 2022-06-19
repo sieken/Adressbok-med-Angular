@@ -12,5 +12,16 @@ export class PostService {
   getPosts(){
     return this.httpClient.get(this.url);
   }
-  
+
+  addPost(data: object) {
+    return this.httpClient.post(this.url, data);
+  }
+
+  deletePost(id: number) {
+    return this.httpClient.delete(`${this.url}/${id}`);
+  }
+
+  editPost(id: number, content: object) {
+    return this.httpClient.put(`${this.url}/${id}`, content);
+  }
 }

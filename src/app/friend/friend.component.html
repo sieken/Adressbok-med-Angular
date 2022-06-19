@@ -1,5 +1,5 @@
 <div class="container">
-    <button id="top-btn">+ Lägg till</button>
+    <button id="top-btn" (click)="addPost()">+ Lägg till</button>
 
 <div class="container">
     <table class="table table-bordered" id="table">
@@ -27,8 +27,8 @@
                 <td>{{post.PhoneNumber}}</td>
 
                 <td>
-                    <button>Ändra</button>
-                    <button>Ta bort</button>
+                    <button (click)="editPost(post)">Ändra</button>
+                    <button (click)="deletePost(post.ID)">Ta bort</button>
                 </td>
                 
             </tr>
