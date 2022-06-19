@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap");
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+.table {
+    margin: 2rem 0;
+}
+
+tr {
+    color: aliceblue;
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    padding: 0 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-family: inherit;
+    margin: 0 0.5rem  0.5rem;
+}
